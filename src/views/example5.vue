@@ -1,7 +1,7 @@
 <template>
 <div class="page5" >
     <span unselectable="on" >
-    <div class="title">過年親戚聊天專用指南</div>
+    <div class="title">年節親戚聊天專用指南</div>
     
     <div class="contain">
         <div class="bigitem ">話題預測</div>
@@ -13,16 +13,32 @@
         <div class="item">學校</div>
         <div class="item">婚嫁</div>
         <i class="fa fa-plus" aria-hidden="true"></i>
+      </div>
+
         <div class="bigitem">年前準備</div>
-        <div class="smallitem">華視 年代 寰宇 新唐人 眼球 壹電視 中天 三立 TVBS 東森 中視 台視 民視</div>
-    </div>
-    <el-progress type="dashboard" :percentage="percentage" :color="colors"></el-progress>
-    <div>
-    <el-button-group>
-        <el-button icon="fa fa-chevron-down" @click="decrease"></el-button>
-        <el-button icon="fa fa-chevron-up" @click="increase"></el-button>
-    </el-button-group>
-    </div>
+            <el-progress type="dashboard" :percentage="percentage" :color="colors"></el-progress>
+            <div>
+            <el-button-group>
+                <el-button icon="fa fa-chevron-down" @click="decrease"></el-button>
+                <el-button icon="fa fa-chevron-up" @click="increase"></el-button>
+            </el-button-group>
+            </div>
+        <div class="smallitem">
+            <a href="https://www.youtube.com/user/TBSCTS">華視 </a>
+            <a href="https://www.youtube.com/user/setnews159">三立 </a>
+            <a href="https://www.youtube.com/channel/UCBuHkb1AS_yRQ71meFNQ3VQ">年代 </a>
+            <a href="https://www.youtube.com/channel/UCp2f7tGJGN6R9Muxipem8Nw">寰宇 </a>
+            <a href="https://www.youtube.com/user/NTDAPTV">新唐人 </a>
+            <a href="https://www.youtube.com/channel/UCTqPBBnP2T57kmiPQ87986g">眼球中央電視台 </a>
+            <a href="https://www.youtube.com/user/twnexttv">壹電視 </a>
+            <a href="https://www.youtube.com/channel/UCpu3bemTQwAU8PqM4kJdoEQ">中天</a>
+            <a href="https://www.youtube.com/user/TVBS">TVBS </a>
+            <a href="https://www.youtube.com/user/newsebc">東森 </a>
+            <a href="https://www.youtube.com/user/chinatvnews">中視 </a>
+            <a href="https://www.youtube.com/user/ttvnewsview">台視 </a>
+            <a href="https://www.youtube.com/user/FTVCP">民視 </a>
+            </div>
+    
     </span>
 </div>
 </template>
@@ -32,21 +48,17 @@
   export default {
     data() {
       return {
-        percentage: 2,
+        percentage: 50,
         colors: [
-          {color: 'pink', percentage: 20},
-          {color: 'yellow', percentage: 40},
-          {color: '#5cb87a', percentage: 60},
-          {color: '#1989fa', percentage: 80},
-          {color: '#6f7ad3', percentage: 100}
+          {color: 'red', percentage: 20},
         ]
       };
     },
     methods: {
       increase() {
         this.percentage += 2;
-        if (this.percentage > 100) {
-          this.percentage = 100;
+        if (this.percentage > 99) {
+          this.percentage = 99;
         }
       },
       decrease() {
@@ -69,9 +81,12 @@
     font-size:30px;
     position:relative;
     z-index: 2;
+    font-family:"normalc"
 }
 .title{
-    font-size:60px;
+    padding-top:10vh;
+    width:100vw;
+    font-size:70px;
     font-family:"cat";
 }
 .smallitem{
@@ -82,13 +97,14 @@
 }
 .bigitem{
     font-size:30px;
-    font-family:"cat";
-    color:red;
+    font-family:"normalc";
+    color:white;
 }
 .contain{
     font-size:18px;
     text-align: left;
     padding:10px;
+    padding-left:10vw;
 }
 .el-button{
   color:white;
@@ -100,5 +116,9 @@
   color:white;
   font-family:"english";
   letter-spacing: 5px;
+}
+a{
+  color:white;
+  text-decoration: none;
 }
 </style>

@@ -16,7 +16,7 @@
     </div>
     
     <img class="right" src="https://raw.githubusercontent.com/wty262690/vue-p5-finalhomework-git/main/src/photo/newright.png" style="float:right; margin: 5px;" />
-    <p class="inturd">
+    <p class="inturd detall">
         那一天，人類終於回想起了，曾經春節回家的恐怖，
         還有被各路親戚超負荷關心所支配的那份屈辱
 
@@ -28,9 +28,14 @@
 
 <style>
 .inturd{
+    font-size:18px;
+    padding-top:10px;
     position:relative;
     z-index: 2;
     color:white;
+}
+.detall{
+    padding-top:100px;
 }
 img{
     position:relative;
@@ -43,5 +48,9 @@ img{
     font-size:60px;
     font-family:"cat";
     letter-spacing: 10px;
+}
+p{
+    font-family:"normalc";
+    letter-spacing: 4px;;
 }
 </style>

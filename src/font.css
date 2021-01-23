@@ -18,3 +18,7 @@
     font-family: "english";
     src: url(./font/Staatliches-Regular.ttf);
 }
+@font-face {
+    font-family: "normalc";
+    src: url(./font/HanyiSentyChalk2018.ttf);
+}
