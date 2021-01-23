@@ -1,8 +1,8 @@
 <template>
 <div class="page5" >
     <span unselectable="on" >
-      <router-link to="/" class="back fa fa-angle-double-left"></router-link>
-    <div class="title">親戚聊天專用指南</div>
+      <router-link to="/"  class="back fa fa-angle-double-left"></router-link>
+    <div class="title">年節聊天專用戰術</div>
     <div class="pword">
         <div class="bigitem ">話題預測</div>
         <div class="contain"  v-for="item in newitem" :key="item">
@@ -94,9 +94,8 @@
     font-family:"normalc"
 }
 .title{
-    padding-top:10vh;
-    
     width:100vw;
+    padding-top:10vh;
     font-size:70px;
     font-family:"cat";
 }
@@ -152,7 +151,7 @@ a{
 }
 .yword{
   position:absolute;
-  left:50vw;
+  left:45vw;
   width:40vw;
   vertical-align: middle;
 }

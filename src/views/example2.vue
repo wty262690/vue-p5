@@ -19,7 +19,7 @@
     data() {
       
       return {
-        value: new Date(),
+        value: null,
       }
     },
     created(){
@@ -51,6 +51,9 @@
           document.getElementById("demo").innerHTML = "EXPIRED";
       }
       }, 1000);
+  },
+   unmounted () {
+    this.value = null;
   },
 }
 </script>
