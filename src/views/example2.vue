@@ -1,5 +1,6 @@
 <template>
 <span unselectable="on" >
+  <router-link to="/" class="back fa fa-angle-double-left"></router-link>
   <div id="demo"></div>
     <el-calendar v-model="value">
       <template #dateCell="{data}">
@@ -144,4 +145,12 @@ p{
  .el-calendar-table:not(.is-range) td.next, .el-calendar-table:not(.is-range) td.prev{
    color:rgb(104, 110, 78);
  }
+.back{
+  position:absolute;
+  z-index: 4;
+  font-size:50px;
+  left:2vw;
+  text-decoration: none;
+  color:rgb(213, 228, 148);
+}
 </style>

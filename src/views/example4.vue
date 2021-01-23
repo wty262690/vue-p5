@@ -1,5 +1,6 @@
 <template>
 <span unselectable="on" >
+    <router-link to="/" class="back fa fa-angle-double-left"></router-link>
     <div class="inturd">
     <img class="left" src="https://raw.githubusercontent.com/wty262690/vue-p5-finalhomework-git/main/src/photo/left.png" style="float:left; margin: 5px;" />
     <p class="songname">春節自救指南</p>
@@ -52,5 +53,13 @@ img{
 p{
     font-family:"normalc";
     letter-spacing: 4px;;
+}
+.back{
+  position:fixed;
+  z-index: 9999;
+  font-size:50px;
+  left:2vw;
+  text-decoration: none;
+  color:rgb(213, 228, 148);
 }
 </style>

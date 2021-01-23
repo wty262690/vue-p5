@@ -1,7 +1,8 @@
 <template>
 <div class="page5" >
     <span unselectable="on" >
-    <div class="title">年節親戚聊天專用指南</div>
+      <router-link to="/" class="back fa fa-angle-double-left"></router-link>
+    <div class="title">親戚聊天專用指南</div>
     <div class="pword">
         <div class="bigitem ">話題預測</div>
         <div class="contain"  v-for="item in newitem" :key="item">
@@ -163,5 +164,13 @@ i{
   margin:5px;
   font-size:17px;
   color:white;
+}
+.back{
+  position:fixed;
+  z-index: 9999;
+  font-size:50px;
+  left:2vw;
+  text-decoration: none;
+  color:rgb(213, 228, 148);
 }
 </style>

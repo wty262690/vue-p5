@@ -1,5 +1,6 @@
 <template>
 <span unselectable="on" >
+    <router-link to="/" class="back fa fa-angle-double-left"></router-link>
   <div class="btn">  
     <p class="no">沒</p>
     <p class="people">人</p>
@@ -363,5 +364,13 @@ $(function()
   position:relative;
   font-size:150px;
   letter-spacing:20px;
+}
+.back{
+  position:fixed;
+  z-index: 9999;
+  font-size:50px;
+  left:2vw;
+  text-decoration: none;
+  color:rgb(213, 228, 148);
 }
 </style>
