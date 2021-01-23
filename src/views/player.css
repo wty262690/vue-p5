@@ -10,7 +10,7 @@ body
 
 #app-cover
 {   
-    padding-left: 50vw;
+    right:0;
     display:inline-block;
     position: fixed;
     width: 50vw;
@@ -248,7 +248,7 @@ body
 
 #player-controls
 {
-    width: 250px;
+    width: 25vw;
     height: 100%;
     margin: 0 5px 0 141px;
     float: right;
@@ -257,8 +257,8 @@ body
 
 .control
 {
-    width: 33.333%;
-    float: left;
+    width: 20.333%;
+    float: right;
     padding: 12px 0;
 }
 
@@ -301,8 +301,6 @@ body
   color: #fff;
   font-size: 14px;
   text-decoration: none;
-  background-color: #ae5f87;
   border-radius: 4px;
-  box-shadow: 0 10px 20px -5px rgba(174, 95, 135, 0.86);
   z-index: 125;
 }

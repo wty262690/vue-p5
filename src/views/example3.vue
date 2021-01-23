@@ -30,7 +30,7 @@
                 <div id="player-controls">
                     <div class="control">
                         <div class="button" id="play-previous">
-                            <i class="fa fa-backward"></i>
+                            <i class="fa fa-forward"></i>
                         </div>
                     </div>
                     <div class="control">
@@ -40,7 +40,7 @@
                     </div>
                     <div class="control">
                         <div class="button" id="play-next">
-                            <i class="fa fa-forward"></i>
+                            <i class="fa fa-backward"></i>
                         </div>
                     </div>
                 </div>
