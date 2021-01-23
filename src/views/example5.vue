@@ -15,9 +15,10 @@
     </div>
     <div class="yword">
         <div class="bigitem">年前準備</div>
+        <p class="final">預期完成度</p>
             <el-progress type="dashboard" :percentage="percentage" :color="colors"></el-progress>
             <div>
-              <p class="final">完成度</p>
+              
             <el-button-group>
                 <el-button icon="fa fa-chevron-down" @click="decrease"></el-button>
                 <el-button icon="fa fa-chevron-up" @click="increase"></el-button>
@@ -110,7 +111,7 @@
     font-family:"cat";
 }
 .smallitem{
-    padding-top:10vh;
+    padding-top:2vh;
     font-size:20px;
     line-height: 40px;
 }
@@ -136,14 +137,15 @@
   color:white;
   background-color:rgba(0, 0, 0, 0);
   border:0;
+  top:25px;
   padding:5px ;
   padding-top:0px;
 }
 .el-progress{
-  top:20px;
+  top:50px;
 }
 .el-progress__text{
-  color:white;
+  color:rgb(255, 255, 255);
   font-family:"english";
   letter-spacing: 5px;
 }
@@ -170,7 +172,8 @@ i{
   font-size:19px;
 }
 .final{
-  margin:5px;
+  margin:10px;
+  margin-top:0px;
   font-size:17px;
   color:white;
 }
@@ -202,4 +205,5 @@ input{
 input:-internal-autofill-selected {
   background-color:rgba(0, 0, 0, 0);
 }
+
 </style>
