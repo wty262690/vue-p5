@@ -8,7 +8,10 @@
         <div class="contain"  v-for="item in newitem" :key="item">
             <div class="item">{{item.new}}</div>
           </div>
-          <i class="fa fa-plus" aria-hidden="true"></i>
+        <div>
+        <input type="text" name="firstname" v-model="addnew.new" />
+        </div>
+        <button class="fa fa-plus" aria-hidden="true" @click = "ccc()"></button>
     </div>
     <div class="yword">
         <div class="bigitem">年前準備</div>
@@ -53,6 +56,9 @@
         colors: [
           {color: 'rgb(192,44,56)', percentage: 20},
         ],
+        addnew: {
+          new: "",
+        },
         newitem: [
           {new: "CVOID19",},
           {new: "政治",},
@@ -60,7 +66,6 @@
           {new: "房市",},
           {new: "工作",},
           {new: "學校",},
-          {new: "婚嫁",},
         ]
       };
     },
@@ -76,6 +81,11 @@
         if (this.percentage < 0) {
           this.percentage = 0;
         }
+      },
+      ccc(){
+        var tmp= Object.assign({}, this.addnew);
+        this.newitem.push(tmp);
+        this.addnew.new="";
       }
     },
   }
@@ -171,5 +181,25 @@ i{
   left:2vw;
   text-decoration: none;
   color:rgb(213, 228, 148);
+}
+input{
+  margin-bottom:20px;
+
+}
+button{
+  background-color:rgba(0, 0, 0, 0);
+  color:white;
+  border:0px;
+  padding-top:2px;
+  margin-bottom:50px;
+}
+input{
+  background-color:rgba(0, 0, 0, 0);
+  border:0px;
+  border-bottom:1px solid white;
+  width:100px;
+}
+input:-internal-autofill-selected {
+  background-color:rgba(0, 0, 0, 0);
 }
 </style>
