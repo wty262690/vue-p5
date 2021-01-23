@@ -95,8 +95,8 @@
 }
 
 .menu-open:checked ~ .menu-item { 
-  color:black;
-  background-color: rgb(255, 7, 7);
+  color:rgb(0, 0, 0);
+  background-color:rgb(192,44,56);
   transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
   align-items: center;
 }
