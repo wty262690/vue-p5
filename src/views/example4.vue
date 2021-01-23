@@ -27,6 +27,7 @@
 
 <style>
 .inturd{
+    font-family:"normalc";
     font-size:18px;
     padding-top:10px;
     position:relative;
@@ -54,7 +55,6 @@ img{
     letter-spacing: 10px;
 }
 p{
-    font-family:"normalc";
     letter-spacing: 4px;;
 }
 .back{

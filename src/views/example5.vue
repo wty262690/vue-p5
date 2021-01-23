@@ -2,7 +2,7 @@
 <div class="page5" >
     <span unselectable="on" >
       <router-link to="/"  class="back fa fa-angle-double-left"></router-link>
-    <div class="title">年節聊天專用戰術</div>
+    <div class="title">年節專用戰術</div>
     <div class="pword">
         <div class="bigitem ">話題預測</div>
         <div class="contain"  v-for="item in newitem" :key="item">

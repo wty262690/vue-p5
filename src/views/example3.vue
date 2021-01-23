@@ -319,6 +319,7 @@ $(function()
   font-family:'cat';
   position:absolute;
   z-index:2;
+  height:200vh;
 }
 .no{
   display:inline-block;
