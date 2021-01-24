@@ -87,6 +87,10 @@
         var tmp= Object.assign({}, this.addnew);
         this.newitem.push(tmp);
         this.addnew.new="";
+        this.percentage -=2;
+        if (this.percentage < 0) {
+          this.percentage = 0;
+        }
       }
     },
   }

@@ -155,4 +155,7 @@ p{
   text-decoration: none;
   color:rgb(213, 228, 148);
 }
+.el-button--mini{
+  font-size:14px;
+}
 </style>
